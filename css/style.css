@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Open+Sans:wght@300;400&display=swap');
 
 :root{
-    --primary-color:#111c33;
-    --secondry-color:#7689b3;
+    --primary-color:#111c33c7;
+    --secondry-color:#ff9100;
 }
 
 *{
@@ -214,7 +214,7 @@ h2{
 .container1{
     width: 100%;
     min-height: 100vh;
-    background: var(--primary-color);
+    background: var(--secondry-color);
     margin: 0px;
     display: flex;
     flex-direction: row;
@@ -287,32 +287,98 @@ h2{
     line-height: 1em;
   }
 
+  /*Contact About us*/
+
+#company{
+  background:var(--primary-color);
+  color: var(--secondry-color);
+  padding: 40px;
+  height: 400px;
+
+}
+
+#company h4{
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#company ul{
+  padding: 0;
+  list-style: none;
+  line-height: 2em;
+}
+
+#company input[type="text"]{
+  padding: 7px;
+}
+
+#company button{
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+}
+
 /*About section starting from here*/
 
-#about {
-    padding: 0px;
-    text-align: center;
-    max-width: 100%;
-}
-#about p {
-    font-size: 1.2rem;
-    min-height: 100vh;
-    margin: auto;
-}
-
-#about h2 {
-    margin-top: 50px;
-    color: #fff;
-}
 .social{
-    background: var(--primary-color);
-    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 10px;
+      
 }
 .social a{
-    margin: 0 5px;
-    color: #ffffff;
+    margin: 0 20px;
+    font-size: 20px;
+    color: var(--secondry-color);
     
 }
+/*bottom INFO part*/
+
+#info{
+  background: var(--primary-color) url('../images/info-bg.jpg') no-repeat;
+}
+
+#info h2{
+  font-size: 35px;
+  margin: 0;
+  padding-bottom: 10px;
+  color: var(--secondry-color);
+}
+#info ul{
+  list-style: none;
+  padding: 0;
+}
+
+#info li{
+  line-height: 2em;
+  font-size: 20px;
+}
+
+.info-down {
+  text-decoration: none;
+  color: var(--secondry-color);
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+.info-down:hover{
+  transform: scaleY(1);
+}
+
+
+
+/* FOOTER */
+
+#main-footer{
+  background: var(--secondry-color);
+  color: #fff;
+  padding: 12px;
+}
+
+
 
 /* MEDIA QUERIES */
 @media(max-width:800px){
