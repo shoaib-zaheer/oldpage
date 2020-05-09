@@ -6,9 +6,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Home-ShoaibZaheer</title>
-  <link rel="stylesheet" href="css/flexboxgrid.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/flexboxgrid.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/lightbox.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
 </head>
 <body>
 <!-- Menu start from here -->
@@ -22,7 +24,7 @@
       <ul class="nav-list">
 
         <li class="nav-item">
-          <a href="/index.html" class="nav-link">Home</a>
+          <a href="index.html" class="nav-link">Home</a>
         </li>
 
         <li class="nav-item">
@@ -32,7 +34,7 @@
         <li class="nav-item">
           <a class="nav-link" id="drop-itDown">Gallery</a>
           <div class="dropdown-content" id="dropdown-item">
-            <a href="./waterColor/waterColor.html" class="nav-link">Water Color</a>
+            <a href="waterColor.html" class="nav-link">Water Color</a>
             <a href="./animation/animation.html" class="nav-link">Animation</a>
             <a href="./computerGraphics/computerGraphics.html" class="nav-link">Computer Graphic</a>
             <a href="./Minuter/minuter.html" class="nav-link">Minuter</a>
@@ -55,90 +57,36 @@
       </ul>
     </nav>
  
+<!-- picture main page start from here -->
 
-<!-- main page start from here -->
-<section class="showcase">
-    <div class="video-container">
-        <video src="video/video.mp4" autoplay muted loop></video>
-    </div>
-    <div class="content">
-        <h2>Shoaib Zaheer</h2>
-        <h3>Multimedia Artiest</h3>
-        <a href="#about" class="btn">Read More</a>
-    </div>
-</section>
-<!-- Gallery section start from here -->
-<div class="container1">
-    
-    <div class="box">
-      <div class="imgBox">
-        <img src="images/img1.jpg" alt="LandScape">
-          <div class="details">
-            <div class="content">
-              <h2>Water Color</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eveniet modi culpa </p>
-                 <a href="./waterColor/waterColor.html" class="btn">Read More</a>
-            </div>  
-          </div>
+<div class="gallery">
+    <div class="items">
+    <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> -->
+        <div class="img-box-shadow">
+          <a href="../images/img2.jpg" data-lightbox="mygallery"><img src="../images/img2-small.png" alt="landScape"></a>
+          <p>Will paintined</p>
         </div>
-    </div>
 
-    <div class="box">
-      <div class="imgBox">
-        <img src="images/img4.jpg" alt="LandScape">
-          <div class="details">
-            <div class="content">
-              <h2>Animation Video's</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eveniet modi culpa </p>
-                 <a href="./animation/animation.html" class="btn">Read More</a>
-            </div>  
-          </div>
+        <div class="img-box-shadow">
+          <a href="../images/img1.jpg" data-lightbox="mygallery" data-title="Country side"><img src="../images/img1-small.jpg" alt="landScape"></a>
         </div>
-    </div>
-    
-    <div class="box">
-      <div class="imgBox">
-        <img src="images/img1.jpg" alt="LandScape">
-          <div class="details">
-            <div class="content">
-              <h2>Computer Graphic and Art</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eveniet modi culpa </p>
-                 <a href="./computerGraphics/computerGraphics.html" class="btn">Read More</a>
-            </div>  
-          </div>
+
+        <div class="img-box-shadow">
+          <a href="../images/img3.png" data-lightbox="mygallery"><img src="../images/img4-small.jpg" alt="landScape"></a>
         </div>
-    </div>
 
-    <div class="box">
-      <div class="imgBox">
-        <img src="images/img4.jpg" alt="LandScape">
-          <div class="details">
-            <div class="content">
-              <h2>Minuter</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eveniet modi culpa </p>
-                 <a href="./Minuter/minuter.html" class="btn">Read More</a>
-            </div>  
-          </div>
+        <div class="img-box-shadow">
+          <a href="https://www.youtube.com/watch?v=FlyO8YEYfOk" data-lightbox="mygallery"><img src="../images/img2-small.png" alt="landScape"></a>
         </div>
-    </div>
 
-    <div class="box">
-      <div class="imgBox">
-        <img src="images/img1.jpg" alt="LandScape">
-          <div class="details">
-            <div class="content">
-              <h2>Mix Media</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eveniet modi culpa </p>
-                 <a href="./mixMedia/mixMedia.html" class="btn">Read More</a>
-            </div>  
-          </div>
+        <div class="img-box-shadow">
+          <a href="../images/img4.jpg" data-lightbox="mygallery"><img src="../images/img4-small.jpg" alt="landScape"></a>
         </div>
+    <!-- </div> -->
     </div>
-
-  </div>
-
 </div>
 
+<!--INFO SECTION-->
 <section id="company">
   <div>
         <div>
@@ -149,10 +97,10 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing, nam suscipit impedit libero quae!
                 Lorem ipsum dolor sit amet, consectetur adipisicing, nam suscipit impedit <a href="_blank">libero quae!</a>
                </p>
-        </div>
-  </div>
+        </div>>
+    </div>
 </section>
-<!--INFO SECTION-->
+
 <section id="info">
   <div class="container">
       <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">

@@ -62,7 +62,7 @@ h2{
     z-index: 11;
   }
   
-  .change {
+  .change {/*linked with script.js file*/
     right: 0px;
   }
   
@@ -145,6 +145,32 @@ h2{
     transform: scaleX(1);
   }
 
+/* dropdown menu for gallery */
+
+#drop-itDown{
+  cursor: pointer;
+}
+.dropdown-content {
+    width: 300px;
+    height: 300px;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10% 0 0 50% ;
+    transition: right .5s cubic-bezier(1. 0. 0. 1);
+    margin-top: 25%;
+    z-index: 13;
+}
+
+.newOne { /*Linked with script.js file*/
+  right: 200px;
+}
+
 /* main page start from here */
 .container{
     margin: auto; 
@@ -192,7 +218,10 @@ h2{
 .content{
     z-index: 10;
 }
-
+.content h2{
+  color: var(--secondry-color);
+}
+/*Main Button in side the page*/
 .btn{
     display: inline;
     padding: 10px 30px;
@@ -203,9 +232,9 @@ h2{
     margin-top: 25px;
     opacity: 0.7;
 }
+
 .btn:hover { 
-    transform: scale(0.95);
-    background: var(--secondry-color);
+  background: var(--secondry-color);
 }
 
 /*Gallery section start from here*/
@@ -224,7 +253,7 @@ h2{
   .container1 .box {
     position: relative;
     width: 100%;
-    height: 150px;
+    max-height: 100vh;
     background: var(--secondry-color);
     margin: 2px;
     box-sizing: border-box;
@@ -240,13 +269,14 @@ h2{
   .container1 .box .imgBox img {
     /*image size can be change*/
     min-width: 100%;
-    max-height: 150px;
+    max-height: 100vh;
     /*below things are normal*/
     transition: transform 2s;
   }
   
   .container1 .box:hover .imgBox img {
     transform: scale(1.2);
+    filter: grayscale(100%);
   }
   
   .container1 .box .details{
@@ -290,11 +320,13 @@ h2{
   /*Contact About us*/
 
 #company{
-  background:var(--primary-color);
+  background: #ffffff;;
   color: var(--secondry-color);
-  padding: 40px;
-  height: 400px;
-
+  text-align: center;
+  padding: 50px;
+  height:auto;
+  
+  
 }
 
 #company h4{
@@ -302,7 +334,7 @@ h2{
   margin-bottom: 0;
 }
 
-#company ul{
+/* #company ul{
   padding: 0;
   list-style: none;
   line-height: 2em;
@@ -317,7 +349,7 @@ h2{
   color: #fff;
   padding: 10px;
   border: 0;
-}
+} */
 
 /*About section starting from here*/
 
@@ -331,7 +363,7 @@ h2{
       
 }
 .social a{
-    margin: 0 20px;
+    margin: 0 5px;
     font-size: 20px;
     color: var(--secondry-color);
     
@@ -388,8 +420,48 @@ h2{
 }
 @media(max-width:500px){
     #showcase .showcase-content{
-        padding: 40px 10px;
+        padding: 0px;
     }
 }
-/* GALLERY */ 
+/* GALLERY for pictures start from here */ 
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  background:var(--secondry-color);
+  padding: 20px 60px;
+  width: 100%;
+  height: auto;
+  }
+  
+  .img-box-shadow{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 8px 10px 0px var(--primary-color);
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  
+  .img-box-shadow p {
+    color:orangered;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .gallery img{
+    transition: 1s;
+    width: 99.5%;
+    height: 80%;
+    background-size: cover;
+  }
+  
+  .gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1) rotate(5deg);
+  }
 
