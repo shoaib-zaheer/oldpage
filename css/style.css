@@ -12,7 +12,6 @@
 body{
     font-family: 'Open-sans', sans-serif;
     font-size: 15px;
-    line-height: 1.5em;
     margin: 0;
     padding: 0;
     background: var(--primary-color);
@@ -150,6 +149,10 @@ h2{
 #drop-itDown{
   cursor: pointer;
 }
+
+.dropdown-content a{
+  margin-top: 10px;
+}
 .dropdown-content {
     width: 300px;
     height: 300px;
@@ -220,6 +223,9 @@ h2{
 }
 .content h2{
   color: var(--secondry-color);
+}
+.content p {
+  padding: 20px;
 }
 /*Main Button in side the page*/
 .btn{
@@ -322,23 +328,30 @@ h2{
 
 #company{
   background: var(--primary-color);
-  color: var(--secondry-color);
-  text-align: center;
   padding: 50px;
+}
+
+#company .about-back{
+  color: var(--secondry-color);
+  padding: 50px;
+  margin: auto;
+  text-align: center;
   height:auto;
 }
 
 #company h4{
   text-transform: uppercase;
-  margin-bottom: 0;
-  font-size: 40px;
+  font-size: 30px;
   padding-bottom: 20px;
+  color: var(--secondry-color)
 }
 
 #company p {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.5;
+  color: var(--secondry-color)
 }
+
 #company a{
   color: #fff;
 }
@@ -350,8 +363,8 @@ h2{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    margin: 10px;
+    padding: 40px;
+    margin: 15px;
       
 }
 .social a{
@@ -367,7 +380,7 @@ h2{
 }
 
 #info h2{
-  font-size: 40px;
+  font-size: 30px;
   margin: 0;
   padding-bottom: 10px;
   color: var(--secondry-color);
@@ -379,7 +392,7 @@ h2{
 
 #info li{
   line-height: 2em;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .info-down {
@@ -420,8 +433,8 @@ h2{
 .gallery{
   display: flex;
   flex-wrap: wrap;
-  background:var(--secondry-color);
-  padding: 20px 60px;
+  background:var(--primary-color);
+  padding: 20px 30px;
   width: 100%;
   height: auto;
   }
@@ -431,8 +444,8 @@ h2{
     height: 300px;
     margin: 10px;
     padding: 5px;
-    background-color: white;
-    box-shadow: 0px 8px 10px 0px var(--primary-color);
+    background-color:var(--secondry-color);
+    box-shadow: -2px 5px 10px -2px black;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
@@ -440,9 +453,10 @@ h2{
   }
   
   .img-box-shadow p {
-    color:orangered;
+    color:var(--primary-color);
     text-align: center;
     padding: 10px;
+    
   }
   
   .gallery img{
