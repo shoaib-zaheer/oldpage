@@ -270,6 +270,7 @@ h2{
     /*image size can be change*/
     min-width: 100%;
     max-height: 100vh;
+    filter: blur(0.5rem);
     /*below things are normal*/
     transition: transform 2s;
   }
@@ -317,39 +318,30 @@ h2{
     line-height: 1em;
   }
 
-  /*Contact About us*/
+  /* About section start from here */
 
 #company{
-  background: #ffffff;;
+  background: var(--primary-color);
   color: var(--secondry-color);
   text-align: center;
   padding: 50px;
   height:auto;
-  
-  
 }
 
 #company h4{
   text-transform: uppercase;
   margin-bottom: 0;
+  font-size: 40px;
+  padding-bottom: 20px;
 }
 
-/* #company ul{
-  padding: 0;
-  list-style: none;
-  line-height: 2em;
+#company p {
+  font-size: 25px;
+  line-height: 1.5;
 }
-
-#company input[type="text"]{
-  padding: 7px;
-}
-
-#company button{
-  background: #222;
+#company a{
   color: #fff;
-  padding: 10px;
-  border: 0;
-} */
+}
 
 /*About section starting from here*/
 
@@ -375,7 +367,7 @@ h2{
 }
 
 #info h2{
-  font-size: 35px;
+  font-size: 40px;
   margin: 0;
   padding-bottom: 10px;
   color: var(--secondry-color);
@@ -387,7 +379,7 @@ h2{
 
 #info li{
   line-height: 2em;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .info-down {
