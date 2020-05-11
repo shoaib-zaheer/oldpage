@@ -329,14 +329,25 @@ h2{
 #company{
   background: var(--primary-color);
   padding: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row; 
+  
 }
 
 #company .about-back{
   color: var(--secondry-color);
-  padding: 50px;
+  padding: 10px;
   margin: auto;
   text-align: center;
-  height:auto;
+  width: 60%;
+  position: relative;
+}
+
+#company .about-image{
+  width: 40%;
+  background: yellow;
 }
 
 #company h4{
@@ -356,7 +367,7 @@ h2{
   color: #fff;
 }
 
-/*About section starting from here*/
+/*Social media section starting from here*/
 
 .social{
     display: flex;
@@ -371,6 +382,7 @@ h2{
     margin: 0 5px;
     font-size: 20px;
     color: var(--secondry-color);
+    
     
 }
 /*bottom INFO part*/
