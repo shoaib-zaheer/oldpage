@@ -1,4 +1,6 @@
 # shoaibPage
 
-my page is 
-css is update for first page and menu need to some work to link javascript in it
+exhibition and programs page need to be updated `important`
+pencil page need some work.
+about page need some grammer and writing mistake to be take care.
+mix midea pictures should number under there own catagori name, later we can make new page for them.
