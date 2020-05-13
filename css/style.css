@@ -501,7 +501,7 @@ h2{
 
 .slider-inner{
   width: 98%;
-  height: 400px;
+  height: 500px;
   position: relative;
   overflow: hidden;
   float: left;
@@ -512,7 +512,7 @@ h2{
 .slider-inner img{
   display: none;
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 .slider-inner img.active{
@@ -521,7 +521,7 @@ h2{
 
 .prev,.next{
   float: left;
-  margin-top: 170px;
+  margin-top: 200px;
   cursor: pointer;
 }
 
