@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="css/flexboxgrid.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="./js/picSlider.js"></script>
 </head>
 <body>
 <!-- Menu start from here -->
@@ -41,7 +46,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="/exhibition.html" class="nav-link">Exhibition</a>
+          <a href="./exhibition.html" class="nav-link">Exhibition</a>
         </li>
 
         <li class="nav-item">
@@ -60,29 +65,48 @@
 
 <section id="company">
   
-             <div class="about-back">
-              <h4>About</h4>
-              <p>Shoaib Zaheer an afghan artist, at present base in Belgium, I am self study & motivated artiest,
-                 able to work with different art media (water color, oil color, pencil, charcoal, calligraphy,
-                 miniature, wood Mosaic) in addition with an interest in computer graphic designing, animation, illustration, 3D model, video editing 
-                 and like to explore the world of computer code writing like HTML, CSS.</p>
+          <div class="about-back">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h4>Projects and Exhibitions</h4>
+                  <div class="exhibition-part">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      
+                      <div class="container10">
+                        <h1>Picture slider</h1>
+                        <div class="slider-outer">
+                          <img src="images/prev.png" class="prev" alt="prev">
+                          <div class="slider-inner">
+                    
+                            <img src="images/img1.jpg" alt="pic-1" class="active">
+                            <img src="images/img3.jpg" alt="pic-2">
+                            <img src="images/img4.jpg" alt="pic-3">
+                            <img src="images/img5.jpg" alt="pic-4">
+                    
+                          </div>
+                          <img src="images/next.png" class="next" alt="prev">
+                        </div>
+                      </div>
 
-                <p>My art is exploration and affirmation into the emotion of subjects and idea by amalgamate of colors, forms and textures, to find  those sentiment in our surroundings.
-                  Ever since i was teenage, I have been fascinated by my childish immersed thoughts. How we human impose the environment as our maintor and walks in the shadow of that vast science and knowledge that our environment offer to us, in order to do prediction on ourself and out destiny.
-                  Human always searching ways to bend the environment, to get new thoughts, here the interesting thing going to happen! The environment like a good maintor give us the link of  one of his chain thoughts, and a new idea get bird. </p>
-
-                <p>Currently one of recognized artist, sponsor by Kunstencentrum Vooruit vzw / Arts Centre Vooruit
-                  ("INFRA project 2019- 2020- 2021").</p>
-                <p>Participated in 2019 ODC (Open Design Course) `KASK School of Arts Gent` displayed short 7 animation series.</p>
-                <p>Migrations of art Art exhibition `Gallery 59 (Peruwelz)` along with Mr. Eddy Devolder and Mr. Aime M Pane.</p>
-                <p>Peace of Art (Brussels) along with 50 more Belgium artiest</p>
-                <p>Petit Chateau  solo art exhibition of water color `Tournai`.</p>
-                <p>Night school of Art one week art workshop and exhibition `Tournai`.</p>
-              </div>
-              <div class="about-image">
-                <img src="#" alt="Shoaib Zaheer picture">
-              </div>
-  
+                  </div>  
+                    <p>Currently one of recognized artist, sponsor by Kunstencentrum Vooruit vzw / Arts Centre Vooruit
+                      ("INFRA project 2019- 2020- 2021").</p>
+                      
+                  </div>
+                  <div>
+                    <p>Participated in 2019 ODC (Open Design Course) `KASK School of Arts Gent` displayed short 7 animation series.</p>
+                      <img src="#" alt="Opend Design Course, project pictures">
+                  </div>
+                  <div>
+                    <p>Migrations of art Art exhibition `Gallery 59 (Peruwelz)` along with Mr. Eddy Devolder and Mr. Aime M Pane.</p>
+                    <img src="#" alt="Peruwelz Exhibition pictures">
+                  </div>
+                  
+                  
+                  <p>Peace of Art (Brussels) along with 50 more Belgium artiest</p>
+                  <p>Petit Chateau  solo art exhibition of water color `Tournai`.</p>
+                  <p>Night school of Art one week art workshop and exhibition `Tournai`.</p>
+            </div>
+        </div>
 </section>
 <!--INFO SECTION-->
 <section id="info">
@@ -123,5 +147,12 @@
 </footer>
 
 <script src="/js/script.js"></script>
+<script>
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+</script>
 </body>
 </html>

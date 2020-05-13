@@ -341,7 +341,7 @@ h2{
   padding: 10px;
   margin: auto;
   text-align: center;
-  width: 60%;
+  width: 90%;
   position: relative;
 }
 
@@ -366,6 +366,7 @@ h2{
 #company a{
   color: #fff;
 }
+
 
 /*Social media section starting from here*/
 
@@ -482,4 +483,56 @@ h2{
     filter: grayscale(100%);
     transform: scale(1.1) rotate(5deg);
   }
+/* Exhibition section start from here */
 
+/* Exhibition page info start from here. */
+.exhibition-part{
+  background: rgb(255, 0, 0);
+  display: inline-block;
+  padding-top: 10px;
+  position: relative;
+}
+
+.container10{
+  width: 540px;
+  margin: 40px auto;
+  overflow: auto;
+}
+
+.slider-inner{
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 3px;
+  border: #666 solid 1px;
+}
+
+.slider-inner img{
+  display: none;
+  width: 500px;
+  height: 300px;
+}
+
+.slider-inner img.active{
+  display: inline-block;
+}
+
+.prev,.next{
+  float: left;
+  margin-top: 130px;
+  cursor: pointer;
+}
+
+.prev{
+  position: relative;
+  margin-right: -45px;
+  z-index: 100;
+}
+
+.next{
+  position: relative;
+  margin-left: -45px;
+  z-index: 100;
+}
