@@ -347,7 +347,19 @@ h2{
 }
 
 #company .about-image{
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.about-image img{
   width: 40%;
+  height: auto;
+  border: solid 20px;
 }
 
 #company h4{
@@ -479,8 +491,6 @@ h2{
     transform: scale(1.1) rotate(5deg);
   }
 /* Exhibition section start from here */
-
-/* Exhibition page info start from here. */
 .exhibition-part{
   background: rgb(255, 0, 0);
   padding-top: 10px;
