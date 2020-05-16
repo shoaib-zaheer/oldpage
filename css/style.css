@@ -276,7 +276,7 @@ h2{
     /*image size can be change*/
     min-width: 100%;
     max-height: 100vh;
-    filter: blur(0.5rem);
+    filter: blur(0.3rem);
     /*below things are normal*/
     transition: transform 2s;
   }
