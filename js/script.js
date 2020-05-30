@@ -3,6 +3,8 @@ const navbar = document.querySelector('.navbar');
 
 menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("change");
+  if (last) last.classList.remove("menuIcon, #drop-itDown");
+  
 });
 
 
@@ -11,4 +13,5 @@ const dropDown = document.querySelector('.dropdown-content');
 
 galleryIcon.addEventListener("click", () => {
   dropDown.classList.toggle("newOne");
+
 });
